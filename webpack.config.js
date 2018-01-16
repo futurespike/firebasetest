@@ -55,6 +55,10 @@ module.exports = env => {
           loaders: ['style-loader', 'css-loader', 'sass-loader'],
           test: /\.s?css$/,
         },
+        {
+          loader: 'file-loader?limit=10000',
+          test: /\.(eot|svg|ttf|woff|woff2)$/,
+        },
       ],
     },
 
